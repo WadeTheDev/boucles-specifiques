@@ -6,7 +6,7 @@
 // })
 // console.log(double);
 
-   // 02
+//    02
 // let longNames = [
 // 	{
 // 		firstName: "Jane",
@@ -18,18 +18,19 @@
 // 	}
 // ]
 
-// let shortNames = longNames.map((names) => {
-//   let theNames = []
-//   theNames.push({name : names.firstName + names.lastName})
-//   return theNames
+// let shortNames = longNames.map((longName) => {
+//     return {
+//         name: `${longName.firstName} ${longName.lastName}`
+//     }
 // })
 
 // console.log(shortNames)
 
+
     // 03
 // let array = [1, "toto", 34, "javascript", 8]
 // let numbers  = array.filter((number) => {
-//     return number >= 0
+//     return number / number === 0
 // })
 
 // console.log(numbers)
@@ -102,10 +103,13 @@
 
 // 07
 
-let numbers = [1,2,3,4,5,7,8,9]
+let numbers = [1,2,3,4,5,7,8,9] 
 
-let vector = numbers.forEach((number) => {
-        return number
+let result = 1
+
+numbers.forEach((number) => {
+    result = result * number
+    console.log(result)
+
 });
-    console.log(vector)
 
